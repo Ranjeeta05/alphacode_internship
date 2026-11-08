@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore the beauty of photographs</p>
+    </header>
+
+    <main>
+         <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('animals')">Animals</button>
+        <button onclick="filterImages('water')">Waterfalls</button>
+    </div>
+          <section class="gallery" id="gallery">
+
+            <img src="https://picsum.photos/id/1015/500/350" alt="Nature" data-category="nature">
+            <img src="https://picsum.photos/id/1016/500/350" alt="Mountain" data-category="nature">
+            <img src="https://picsum.photos/id/1018/500/350" alt="Landscape" data-category="nature">
+            <img src="https://picsum.photos/id/1020/500/350" alt="Forest"data-category="nature">
+            <img src="https://picsum.photos/id/1024/500/350" alt="Animal" data-category="animals">
+            <img src="https://picsum.photos/id/1035/500/350" alt="Waterfall" data-category="water">
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
